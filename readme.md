@@ -38,8 +38,8 @@ Thus, we have the following **object model**
 ```c++
 struct f_gc_frame{
 void *prev;              		// dynamic chain, pointing to f's caller's GC frame
-char *arguments_gc_map;  		//should be assigned the value of"f_arguments_gc_map"
-int *arguments_base_address;     // address of the first argument
+char *arguments_gc_map;			//should be assigned the value of"f_arguments_gc_map"
+int *arguments_base_address;	// address of the first argument
 char *locals_gc_map;     		// should be assigned the value of "f_locals_gc_map"
 struct A *local1;        		// remaining fields are method locals
 int local2;			 
@@ -63,7 +63,7 @@ frame.arguments_base_address = &this;
 frame.locals_gc_map = f_locals_gc_map;
 // initialize locals of this method 
 // statements should be rewritten apporpriately
-prev = frame.prev	// 恢复现场
+prev = frame.prev	
 }
 ```
 
@@ -88,5 +88,20 @@ void *forwarding; // forwarding pointer, will be used by your Gimple GC
 };
 ```
 
+#### Optimizations
 
+The optimizations include two part, one is on ***AST***, and the other one is on ***CFG***
 
++ AST
+
+>  Dead Class Elimination
+>
+> Dead Code Elimination
+>
+> Algebraic Simplification
+>
+> Constant Folding
+
++ CFG
+
+>  Liveness Analysis use in Dead Code Elimination
