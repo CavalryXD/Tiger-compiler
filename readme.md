@@ -25,7 +25,7 @@ jasmin -jar jasmin.jar (your filename).j
 java (your filename)
 ```
 
-#### Obejct Model
+#### Object Model
 
 ![call stack](https://https://github.com/CavalryXD/Tiger-compiler/raw/master/image/image-20200404130726398.png)
 
