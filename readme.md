@@ -27,7 +27,7 @@ java (your filename)
 
 #### Object Model
 
-![call stack](https://https://github.com/CavalryXD/Tiger-compiler/raw/master/image/image-20200404130726398.png)
+![call stack](https://github.com/CavalryXD/Tiger-compiler/blob/master/image/image-20200404130726398.png)
 
 This figure is the typical memory layout of C call stack, unlike arguments, you cannot determine the layout of locals  variable on the call stack. In fact, GCC is free to determine any layout for all the method locals and it may put some or all of the locals into registers instead of on the call stack.
 
