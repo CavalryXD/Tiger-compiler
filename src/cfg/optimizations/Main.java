@@ -19,7 +19,7 @@ public class Main
       // liveness analysis.
       // Your code here:
     }
-
+/*
     // dead-code elimination
     DeadCode deadCode = new DeadCode();
     control.CompilerPass deadCodePass = new control.CompilerPass(
@@ -81,7 +81,7 @@ public class Main
       csePass.doit();
       cfg = cse.program;
     }
-
+*/
     program = cfg;
 
     return;

@@ -648,7 +648,7 @@ public class LivenessVisitor implements cfg.Visitor
 		// 创建图
 		drawGraph(graph, m);
 		// 打印图
-		graph.visualize();
+		// graph.visualize();
 		this.graph = graph;
 		// 得到quasi-reverse top
 		Node start = this.graph.graph.getFirst();

@@ -275,10 +275,11 @@ public class Tiger
         String cmdd = "gcc " + fname + ".c runtime/runtime.c";
         System.out.println(cmdd);
         run.exec(cmdd);
+        cmdd = "./b.out";     // for convenience
+        run.exec(cmdd);
     } catch (IOException e) {
         e.printStackTrace();
     }
-    
     return;
   }
 
