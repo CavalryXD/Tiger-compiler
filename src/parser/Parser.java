@@ -13,8 +13,7 @@ public class Parser
 {
   Lexer lexer;
   Token current;
-  // 标记该id是否是类内field
-  boolean isField;
+  boolean isField;  // 标记该id是否是类内field
   // 加入回溯相关的数据
   boolean rollback;
   Token rollbackToken;
@@ -71,7 +70,7 @@ public class Parser
   private LinkedList<Ast.Exp.T> parseExpList()
   {
     LinkedList<Ast.Exp.T> expList = new LinkedList<>();
-    if (current.kind == Kind.TOKEN_RPAREN)    // 啥意思？
+    if (current.kind == Kind.TOKEN_RPAREN)    // ( Exp )
       return expList;
     expList.add(parseExp());
     while (current.kind == Kind.TOKEN_COMMER) { // 逗号 ','

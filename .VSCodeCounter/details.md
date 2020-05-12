@@ -1,17 +1,17 @@
 # Details
 
-Date : 2020-04-06 13:49:33
+Date : 2020-04-30 23:44:31
 
-Directory c:\Users\Administrator\Desktop\compiler\Tiger\Lab5
+Directory c:\Users\Administrator\Desktop\compiler\Tiger\Tiger-compiler-master
 
-Total : 441 files,  20843 codes, 1978 comments, 2764 blanks, all 25585 lines
+Total : 443 files,  26174 codes, 1977 comments, 2809 blanks, all 30960 lines
 
 [summary](results.md)
 
 ## Files
 | filename | language | code | comment | blank | total |
 | :--- | :--- | ---: | ---: | ---: | ---: |
-| [bin/Tiger.class](/bin/Tiger.class) | Java | 76 | 0 | 0 | 76 |
+| [bin/Tiger.class](/bin/Tiger.class) | Java | 77 | 0 | 0 | 77 |
 | [bin/ast/Acceptable.class](/bin/ast/Acceptable.class) | Java | 2 | 0 | 0 | 2 |
 | [bin/ast/Ast$Class$ClassSingle.class](/bin/ast/Ast$Class$ClassSingle.class) | Java | 12 | 0 | 0 | 12 |
 | [bin/ast/Ast$Class$T.class](/bin/ast/Ast$Class$T.class) | Java | 6 | 0 | 0 | 6 |
@@ -133,7 +133,7 @@ Total : 441 files,  20843 codes, 1978 comments, 2764 blanks, all 25585 lines
 | [bin/cfg/optimizations/Cse.class](/bin/cfg/optimizations/Cse.class) | Java | 14 | 0 | 0 | 14 |
 | [bin/cfg/optimizations/DeadCode.class](/bin/cfg/optimizations/DeadCode.class) | Java | 15 | 0 | 0 | 15 |
 | [bin/cfg/optimizations/LivenessVisitor$Liveness_Kind_t.class](/bin/cfg/optimizations/LivenessVisitor$Liveness_Kind_t.class) | Java | 15 | 0 | 0 | 15 |
-| [bin/cfg/optimizations/LivenessVisitor.class](/bin/cfg/optimizations/LivenessVisitor.class) | Java | 122 | 0 | 1 | 123 |
+| [bin/cfg/optimizations/LivenessVisitor.class](/bin/cfg/optimizations/LivenessVisitor.class) | Java | 121 | 0 | 1 | 122 |
 | [bin/cfg/optimizations/Main.class](/bin/cfg/optimizations/Main.class) | Java | 29 | 0 | 0 | 29 |
 | [bin/cfg/optimizations/ReachingDefinition.class](/bin/cfg/optimizations/ReachingDefinition.class) | Java | 20 | 0 | 0 | 20 |
 | [bin/codegen/C/Acceptable.class](/bin/codegen/C/Acceptable.class) | Java | 2 | 0 | 0 | 2 |
@@ -348,6 +348,8 @@ Total : 441 files,  20843 codes, 1978 comments, 2764 blanks, all 25585 lines
 | [bin/util/Temp.class](/bin/util/Temp.class) | Java | 14 | 0 | 0 | 14 |
 | [bin/util/Todo.class](/bin/util/Todo.class) | Java | 7 | 0 | 1 | 8 |
 | [bin/util/Triple.class](/bin/util/Triple.class) | Java | 19 | 0 | 0 | 19 |
+| [image/常用代码模板3----搜索与图论.pdf](/image/常用代码模板3----搜索与图论.pdf) | Plain Text (PDF) | 5,248 | 0 | 22 | 5,270 |
+| [readme.md](/readme.md) | Markdown | 80 | 0 | 27 | 107 |
 | [runtime/command-line.c](/runtime/command-line.c) | C | 161 | 15 | 26 | 202 |
 | [runtime/command-line.h](/runtime/command-line.h) | C++ | 4 | 0 | 3 | 7 |
 | [runtime/control.c](/runtime/control.c) | C | 2 | 0 | 2 | 4 |
@@ -356,7 +358,7 @@ Total : 441 files,  20843 codes, 1978 comments, 2764 blanks, all 25585 lines
 | [runtime/lib.c](/runtime/lib.c) | C | 8 | 0 | 2 | 10 |
 | [runtime/main.c](/runtime/main.c) | C | 9 | 13 | 5 | 27 |
 | [runtime/runtime.c](/runtime/runtime.c) | C | 5 | 0 | 1 | 6 |
-| [src/Tiger.java](/src/Tiger.java) | Java | 170 | 119 | 38 | 327 |
+| [src/Tiger.java](/src/Tiger.java) | Java | 174 | 115 | 38 | 327 |
 | [src/ast/Acceptable.java](/src/ast/Acceptable.java) | Java | 5 | 0 | 2 | 7 |
 | [src/ast/Ast.java](/src/ast/Ast.java) | Java | 642 | 52 | 130 | 824 |
 | [src/ast/Fac.java](/src/ast/Fac.java) | Java | 0 | 99 | 12 | 111 |
@@ -380,7 +382,7 @@ Total : 441 files,  20843 codes, 1978 comments, 2764 blanks, all 25585 lines
 | [src/cfg/optimizations/CopyProp.java](/src/cfg/optimizations/CopyProp.java) | Java | 150 | 11 | 34 | 195 |
 | [src/cfg/optimizations/Cse.java](/src/cfg/optimizations/Cse.java) | Java | 150 | 11 | 35 | 196 |
 | [src/cfg/optimizations/DeadCode.java](/src/cfg/optimizations/DeadCode.java) | Java | 126 | 11 | 28 | 165 |
-| [src/cfg/optimizations/LivenessVisitor.java](/src/cfg/optimizations/LivenessVisitor.java) | Java | 577 | 117 | 101 | 795 |
+| [src/cfg/optimizations/LivenessVisitor.java](/src/cfg/optimizations/LivenessVisitor.java) | Java | 576 | 120 | 97 | 793 |
 | [src/cfg/optimizations/Main.java](/src/cfg/optimizations/Main.java) | Java | 64 | 14 | 12 | 90 |
 | [src/cfg/optimizations/ReachingDefinition.java](/src/cfg/optimizations/ReachingDefinition.java) | Java | 160 | 59 | 53 | 272 |
 | [src/codegen/C/Acceptable.java](/src/codegen/C/Acceptable.java) | Java | 5 | 0 | 2 | 7 |
