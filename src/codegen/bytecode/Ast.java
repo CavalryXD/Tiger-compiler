@@ -167,7 +167,6 @@ public class Ast
       @Override
       public void accept(Visitor v) {
         v.visit(this);
-        
       }
     }
     public static class Getfield extends T
@@ -178,9 +177,9 @@ public class Ast
       
       public Getfield(String classId,String id,Type.T type)
       {
-        this.classId=classId;
-        this.id=id;
-        this.type=type;
+        this.classId = classId;
+        this.id = id;
+        this.type = type;
       }
 
       @Override
@@ -206,7 +205,7 @@ public class Ast
         v.visit(this);
       }
     }
-        /*----------------------
+    /*----------------------
      * Before    |  After   |
      * ---------------------
      * index     |  value   |
@@ -493,9 +492,9 @@ public class Ast
     	
     	public Putfield(String classId,String id,Type.T type)
     	{
-    		this.classId=classId;
-    		this.id=id;
-    		this.type=type;
+    		this.classId = classId;
+    		this.id = id;
+    		this.type = type;
     	}
 
       @Override

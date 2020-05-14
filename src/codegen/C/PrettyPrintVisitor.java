@@ -390,7 +390,7 @@ public class PrettyPrintVisitor implements Visitor {
       this.say("  ");
       dec.type.accept(this);// 类型
       this.say(" " + dec.id + ";\n");//id
-		}
+		  }
       else {
         /*
         * 在打印local声明的时候，如果是Array或者是ClassType就用frame.
@@ -674,9 +674,9 @@ public class PrettyPrintVisitor implements Visitor {
     this.sayln("");
     
     this.sayln("//methods decl");   // 方法声明
-    for(Method.T mm:p.methods)
+    for(Method.T mm : p.methods)
     {
-    	MethodSingle m=(MethodSingle)mm;
+    	MethodSingle m = (MethodSingle) mm;
     	m.retType.accept(this);   // 处理返回值
         this.say(" " + m.classId + "_" + m.id + "(");
         int size = m.formals.size();
@@ -713,8 +713,8 @@ public class PrettyPrintVisitor implements Visitor {
       outputGCmap((codegen.C.Ast.Method.MethodSingle)m);
     //
     this.sayln("// methods");
-    for (Method.T m : p.methods) {  //方 法的定义------在方法定义以前，就应该初始化虚函数表
-      // 但是，虚函数表的初始化又需要方法名，所以在方法定义之前，
+    for (Method.T m : p.methods) {  // 方法的定义------在方法定义以前，就应该初始化虚函数表
+      // 但是, 虚函数表的初始化又需要方法名，所以在方法定义之前,
       // 应该先声明方法
       m.accept(this);
     }

@@ -38,6 +38,7 @@ import ast.Ast.Type;
 import ast.Ast.Type.ClassType;
 import control.Control.ConAst;
 
+// parser的规则规定了必须先声明后定义, 所以这里直接就可以先构造好符号表
 public class ElaboratorVisitor implements ast.Visitor {
     public ClassTable classTable; // symbol table for each class
     public MethodTable methodTable; // symbol table for each method
@@ -235,6 +236,7 @@ public class ElaboratorVisitor implements ast.Visitor {
         return;
     }
 
+    // Num类型是由parser得到的token为数字之后放入AST的
     @Override
     public void visit(Num e) {
         this.type = new Type.Int();
@@ -488,6 +490,7 @@ public class ElaboratorVisitor implements ast.Visitor {
     }
 
     // class table for normal classes
+    // 这里可以检查重复命名(类内方法和成员fields)的错误
     private void buildClass(ClassSingle c) {
         this.classTable.put(c.id, new ClassBinding(c.extendss));
         for (Dec.T dec : c.decs) {

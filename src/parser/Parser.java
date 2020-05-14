@@ -518,7 +518,6 @@ public class Parser
       isField = false;    // 因为类内先解析fields后methods, 所以当解析到methods时就要置为false
       Ast.Method.T method = parseMethod();
       methods.add(method);
-      
     }
     isField = true;
     return methods;

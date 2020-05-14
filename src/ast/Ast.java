@@ -234,7 +234,7 @@ public class Ast {
           public T exp;   // 是哪个对象调用的
           public String id;   // 方法名
           public java.util.LinkedList<T> args;  // 函数调用参数列表
-          public String type; // type of first field "exp" 即调用方法的对象的类型 
+          public String type; // type of first field "exp" 即调用方法的对象的类型, 在Elab中用到
           public java.util.LinkedList<Type.T> at; // arg's type
           public Type.T rt;   // 返回值类型
           public Call(T exp, String id, java.util.LinkedList<T> args) {

@@ -126,7 +126,7 @@ void *Tiger_new (void *vtable, int size)
   char* ptr = heap.fromFree;
   memset(ptr, 0, size);
   *(ptr + 4) = 0;     // 代表是object
-  *(ptr + 8) = size;     // 这里要置为size, 置0会再cheney()死循环
+  *(ptr + 8) = size;     // 这里要置为size, 置0会在cheney()死循环
   *(ptr + 12) = 0;    // forwarding置为0 表示当前obj在From区域中
 
   heap.fromFree += size;
